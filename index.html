@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Web Programming project</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts -->
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-utensils"></i> 밍갈라바</a>
+    
+
+
+        <nav class="navbar">
+            <a href="#home">홈</a>
+            <a href="#about">소개</a>
+            <a href="#dishes">메뉴</a>
+            <a href="#order">주문</a>
+            <a href="#book">예약</a>
+        </nav>
+    
+        <div class="icons">
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+
+    </section>
+    
+   
+</header>
+
+
+<form action="" id="search-form">
+    <input type="search" placeholder="검색어를 입력하세요..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search" id="search-btn"></label>
+    <i class="fas fa-times" id="close"></i>
+    <div id="search-feedback" style="display: none; color: var(--orange); margin-top: 1rem;"></div>
+</form>
+
+
+
+<!-- home section starts  -->
+
+<div class="container">
+
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>오늘의 특별 요리</span>
+                        <h3>모힝가</h3>
+                        <p>쌀국수로 만든 생선 국수</p>
+                        <a href="#dishes" class="btn">주문하기</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/IMG_1219.jpeg" alt="모힝가">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>오늘의 특별 요리</span>
+                        <h3>오노 카욱 스웨</h3>
+                        <p>코코넛 밀크 밀국수</p>
+                        <a href="#dishes" class="btn">주문하기</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/IMG_1217.jpeg" alt="오노 카욱 스웨">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>오늘의 특별 요리</span>
+                        <h3>미얀마식 모든 튀김</h3>
+                        <p>전통적으로 호박, 새우, 양파, 두부 등을 미얀마식으로 튀긴 요리</p>
+                        <a href="#dishes" class="btn">주문하기</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/IMG_1222.jpeg" alt="미얀마식 모든 튀김">
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<div class="container">
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> 소개 </h1>
+        
+    
+        <div class="row">
+    
+            <div class="image">
+                <img src="img/IMG_1221.jpg" alt="">
+            </div>
+ 
+            <div class="content">
+                <h3>서울의 최고 미얀마식당!</h3>
+                <p>서울에 새롭게 문을 연 버마 레스토랑은 미얀마의 전통적인 맛과 문화를 선사합니다.</p>
+                <p>저희는 신선한 재료와 정통 레시피를 사용하여 미얀마의 풍미를 그대로 담아낸 요리를 제공합니다.</p>
+                <p>서울에서 미얀마의 정취를 경험해 보세요!</p>
+                <p>맛있는 음식과 따뜻한 서비스를 통해 특별한 미식 여행을 선사하겠습니다.많은 방문을 부탁드립니다!</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>무료 배달</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>간편 결제</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>영업 시간은 11 시 부터 22 시까지!</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">더 알아보기</a>
+            </div>
+    
+        </div>
+    
+    </section>
+
+</div>
+
+<!-- about section ends -->
+
+<!-- dishes section starts  -->
+
+<div class="container">
+
+    <section class="dishes" id="dishes">
+
+        <h1 class="heading"> 메뉴 </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="img/IMG_1218.jpeg" alt="">
+                <h3>시타민</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn add-to-cart">장바구니</a>
+            </div>
+
+            <div class="box">
+                <img src="img/IMG_1218.jpeg" alt="">
+                <h3>샨 비빔국수</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn add-to-cart">장바구니</a>
+            </div>
+            
+            <div class="box">
+                <img src="img/IMG_1218.jpeg" alt="">
+                <h3>만달레이 몬디</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn add-to-cart">장바구니</a>
+            </div>
+    
+            <div class="box">
+                <img src="img/IMG_1218.jpeg" alt="">
+                <h3>짝씨퍈</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn add-to-cart">장바구니</a>
+            </div>
+    
+            <div class="box">
+                <img src="img/IMG_1218.jpeg" alt="">
+                <h3>랏페</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn add-to-cart">장바구니</a>
+            </div>
+        
+            <div class="box">
+                <img src="img/IMG_1218.jpeg" alt="">
+                <h3>응아삐와 채소 세트 </h3>
+                <h3>(공기밥 포함)</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn add-to-cart">장바구니</a>
+            </div>
+        
+    
+        </div>
+    
+    </section>
+
+</div>
+
+<!-- dishes section ends -->
+
+<!-- cart section ends -->
+ 
+<section class="order" id="order">
+    <h1 class="heading"> 주문 </h1>
+    <div class="order-container">
+        <p>장바구니가 비어 있습니다. 메뉴에서 추가해주세요!</p>
+    </div>
+    <button class="btn checkout">결제하기</button>
+    <button class="btn continue-order">추가 주문하기</button>
+</section>
+
+
+<!-- cart section ends -->
+
+
+<div class="container">
+
+    <section class="book" id="book">
+
+        <h3 class="sub-heading"> 예약 </h3>
+        <h1 class="heading"> 단체석,룸,홀 </h1>
+    
+        <form action="">
+    
+            <div class="inputBox">
+                <div class="input">
+                    <span>예약자 이름</span>
+                    <input type="text" placeholder="이름을 입력해주세요">
+                </div>
+                <div class="input">
+                    <span>연략처</span>
+                    <input type="number" placeholder="전화번호를 알려주세요">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>인원</span>
+                    <input type="number" placeholder="인원를 입력해주세요">
+                </div>
+                <div class="input">
+                    <span>날짜와 시간</span>
+                    <input type="datetime-local">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>주문(선택시 예약금 만원)</span>
+                    <textarea name="" placeholder="미리 주문하고 싶고 거 있으면 써주세요." id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input">
+                    <span>요청사항(단체석인지, 룸,홀인지 알려주세요. 단체석, 룸 예약금 만원)</span>
+                    <textarea name="" placeholder="말씀해주세요." id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+    
+            <input type="submit" value="예약하기" class="btn">
+    
+        </form>
+    
+    </section>
+
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!--swiper js-->
+
+<script src="js/script.js"></script>
+</body>
+</html>
